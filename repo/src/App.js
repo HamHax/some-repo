@@ -2,6 +2,8 @@ import { Component } from "react";
 import "./App.css"
 import Wrapper from "./Ui/Wrapper/Wrapper";
 import classes from "./Ui/Global.module.css"
+import Card from "./Ui/Card/Card";
+import Text from "./Components/Text/Text"
 
 
 
@@ -39,7 +41,11 @@ class App extends Component{
     render(){
       return(
         <Wrapper>
-            {this.state.timer}
+          <Card className={classes.conteiner}> 
+          <Text>
+          {this.state.timer}
+          </Text>
+          </Card>
         </Wrapper>
       )
     }
